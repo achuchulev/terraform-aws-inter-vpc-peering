@@ -8,16 +8,16 @@
 
 ## How to use
 
-- Clone the repo
+### Clone the repo
 
 ```
 git clone https://github.com/achuchulev/terraform-aws-inter-vpc-peering.git
 cd terraform-aws-inter-vpc-peering
 ```
 
-- Create `terraform.tfvars` file
+### Create `terraform.tfvars` file
 
-### Inputs
+#### Inputs
 
 | Name  |	Description |	Type |  Default |	Required
 | ----- | ----------- | ---- |  ------- | --------
@@ -36,7 +36,7 @@ cd terraform-aws-inter-vpc-peering
 | accepter_vpc_name | Set a VPC name  | string  | "" | no
 
 
-- Initialize terraform and plan/apply
+### Initialize terraform and plan/apply
 
 ```
 terraform init
@@ -55,7 +55,7 @@ terraform apply
   - create routes from acceptor to requestor
   
   
-### Outputs
+#### Outputs
 
 | Name  |	Description 
 | ----- | ----------- 
