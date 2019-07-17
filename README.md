@@ -31,7 +31,7 @@ cd terraform-aws-inter-vpc-peering
 | accepter_vpc_cidr_block  | Accepter VPC CIDR block | string | 10.200.0.0/16 | yes
 | requester_vpc_subnet_cidr_blocks  | Requester VPC CIDR block | list | 10.100.0.0/24, 10.100.1.0/24 | yes
 | accepter_vpc_subnet_cidr_blocks  | Accepter VPC CIDR block | list | 10.200.0.0/24, 10.200.1.0/24 | yes
-| activate_peering  | Prevent the module from creating or accessing any resources | string  | `true` | on
+| activate_peering  | Prevent the module from creating or accessing any resources | string  | `true` | no
 | requester_vpc_name  | Set a VPC name | string  | "" | no
 | accepter_vpc_name | Set a VPC name  | string  | "" | no
 
