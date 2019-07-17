@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - git
-- terraform
+- terraform ( < 0.12.xx )
 - AWS subscription
 
 ## How to use
