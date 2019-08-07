@@ -15,6 +15,14 @@ output "requester_vpc_name" {
 output "accepter_vpc_name" {
   value = module.vpc_accepter.vpc_name
 }
+  
+output "requester_subnet_ids" {
+  value = module.vpc_requester.subnet_ids
+}
+
+output "accepter_subnet_ids" {
+  value = module.vpc_accepter.subnet_ids
+}
 
 ### Peering module outputs
 
