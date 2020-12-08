@@ -46,16 +46,6 @@ module "inter_vpc_peering" {
   requester_vpc_id = module.vpc_requester.vpc_id
   accepter_vpc_id  = module.vpc_accepter.vpc_id
 
-  requester_vpc_tags = {
-    Name = module.vpc_requester.vpc_name
-    Side = "Requester"
-  }
-
-  accepter_vpc_tags = {
-    Name = module.vpc_accepter.vpc_name
-    Side = "Accepter"
-  }
-
   requester_peer_tags = {
     Name = "VPC peering between ${module.vpc_requester.vpc_name} and ${module.vpc_accepter.vpc_name}"
     Side = "Requester"
